@@ -8,7 +8,7 @@ ENV S6_OVERLAY_VERSION=v1.17.2.0 \
     HOME=/root
 
 # update repositories
-RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories
+# RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories
 
 # install package
 RUN apk add --update curl gcc g++ libgcc make \
