@@ -8,7 +8,7 @@ ENV S6_OVERLAY_VERSION=v1.17.2.0 \
     HOME=/root
 
 # update repositories
-# RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories
+RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories
 
 # install package
 RUN apk add --update curl gcc g++ libgcc make \
@@ -17,9 +17,9 @@ RUN apk add --update curl gcc g++ libgcc make \
 # combile nginx
 RUN mkdir -p /root/pkg \
     && cd /root/pkg \
-    && wget http://nginx.org/download/nginx-1.11.5.tar.gz \
+    && curl -sSL -o nginx-1.11.5.tar.gz http://nginx.org/download/nginx-1.11.5.tar.gz \
     && tar -xvf nginx-1.11.5.tar.gz \
-    && wget https://github.com/arut/nginx-rtmp-module/archive/v1.1.10.tar.gz \    
+    && curl -sSL -o v1.1.10.tar.gz https://github.com/arut/nginx-rtmp-module/archive/v1.1.10.tar.gz \    
     && tar -xvf v1.1.10.tar.gz \
     && cd /root/pkg/nginx-1.11.5 \
     && . /root/pkg/nginx-1.11.5/configure --add-module=/root/pkg/nginx-rtmp-module-1.1.10 \

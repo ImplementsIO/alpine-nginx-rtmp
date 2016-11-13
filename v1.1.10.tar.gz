@@ -1,0 +1,26 @@
+--2016-11-13 21:09:15--  https://github.com/arut/nginx-rtmp-module/archive/v1.1.10.tar.gz
+Resolving github.com... 192.30.253.113, 192.30.253.112
+Connecting to github.com|192.30.253.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/arut/nginx-rtmp-module/tar.gz/v1.1.10 [following]
+--2016-11-13 21:09:19--  https://codeload.github.com/arut/nginx-rtmp-module/tar.gz/v1.1.10
+Resolving codeload.github.com... 192.30.253.120, 192.30.253.121
+Connecting to codeload.github.com|192.30.253.120|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 519877 (508K) [application/x-gzip]
+Saving to: ‘v1.1.10.tar.gz.1’
+
+     0K .......... .......... .......... .......... ..........  9% 35.5K 13s
+    50K .......... .......... .......... .......... .......... 19% 70.9K 9s
+   100K .......... .......... .......... .......... .......... 29% 71.4K 7s
+   150K .......... .......... .......... .......... .......... 39% 28.4K 7s
+   200K .......... .......... .......... .......... .......... 49% 71.1K 5s
+   250K .......... .......... .......... .......... .......... 59% 15.8K 6s
+   300K .......... .......... .......... .......... .......... 68% 11.8K 6s
+   350K .......... .......... .......... .......... .......... 78% 5.85K 6s
+   400K .......... .......... .......... .......... .......... 88% 7.50K 4s
+   450K .......... .......... .......... .......... .......... 98% 7.03K 1s
+   500K .......                                               100% 17.0K=35s
+
+2016-11-13 21:09:56 (14.3 KB/s) - ‘v1.1.10.tar.gz.1’ saved [519877/519877]
+
