@@ -20,7 +20,7 @@ RUN mkdir -p /root/pkg \
     && wget http://nginx.org/download/nginx-1.11.5.tar.gz \
     && tar -xvf nginx-1.11.5.tar.gz \
     && wget https://github.com/arut/nginx-rtmp-module/archive/v1.1.10.tar.gz \    
-    && tar -xvf nginx-rtmp-module-1.1.10.tar.gz \
+    && tar -xvf v1.1.10.tar.gz \
     && cd /root/pkg/nginx-1.11.5 \
     && . /root/pkg/nginx-1.11.5/configure --add-module=/root/pkg/nginx-rtmp-module-1.1.10 \
     && make \
