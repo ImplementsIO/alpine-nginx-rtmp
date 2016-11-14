@@ -1,10 +1,10 @@
-Alpine nginx with rtmp-module & ffmpeg tools
+Alpine nginx with rtmp-module & ffmpeg tools && MPEG-DASH
 
 ## Information
 
-- nginx=1.11.5
-- nginx-rtmp-module=1.1.10
-	
+- nginx=1.8.1
+- nginx-rtmp-module=1.1.7.10 (https://github.com/sergey-dryabzhinsky/nginx-rtmp-module/releases)
+
 ## Usage
 
 - Onbuild 
