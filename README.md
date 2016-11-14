@@ -10,7 +10,7 @@ Alpine nginx with rtmp-module & ffmpeg tools && MPEG-DASH
 ### Run
 
 ```
-	docker run --name nrt -p 80:80 -p 443:443 -p 8080:8080 -p 1935:1935
+docker run --name nrt -p 80:80 -p 443:443 -p 8080:8080 -p 1935:1935
 ```
 
 ### PUSH
